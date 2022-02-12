@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Our Product</title>
+    <link href="bar.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+
+  <body>
+    <header id="navbar">
+      <!--logo-->
+      <a href="home.html"><img class="logo" src="images/logo.svg" alt="Our Logo" style="width:80px"></a>
+      <nav>
+        <!--links-->
+        <ul class="nav_links">
+          <li><a href="product.html">Our Product</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="checkout.html"><button>Buy</button></a>
+    </header>
+    
+  <div class="content">
+    <h1>Our Product</h1>
+    <hr>
+    <p>This is a real “invisible umbrella”, which takes advantage of the air flow as shelter from the rain.</p>
+    <hr>
+    <img src="images/umbrella.jpg" alt="Air Umbrella"></img>
+    <hr>
+    <br>
+    <p>Air is everywhere on the earth. The flowing air can change the moving path of the object. The faster the air moves, the greater the energy is. The jet airflow can isolate some objects. So when we make use of the airflow, we can protect ourselves from the rain drops. Then the airflow forms an umbrella without a visible cover. </p>
+    <img src="images/diagram.jpg" style="width: 25%;"></img>
+    <hr>
+    <img src="images/diagram2.jpg"></img>
+    <hr>
+    <img src="images/diagram3.jpg"></img>
+    <hr>
+    <p> Based on this idea, we designed various types of air umbrella with postgraduates from Nanjing University of Aeronautics and Astronautics from July in 2012 to August in 2013. We also tested the air umbrellas on rainy days. </p>
+    <p> Luckily, one of our samples achieved the goal of protecting one or even more persons from the rain in the test in November 2012. But the product still needed more improvement. As the sample was designed to take a large amount of airflow, the top was big, which didn’t achieve the portable characteristic. </p>
+    <p> To design a better looking product, we cooperated with a few PhD graduates from  Beijing University of Aeronautics andAstronautics to improve the design. After a year’s hard work, we finally improved the appearance of the umbrella which may influence the effect. But at least, we could really use it outdoor on rainy days. </p>
+    <hr>
+    <img src="images/diagram4.jpg"></img>
+    <hr>
+    <img src="images/diagram5.jpg"></img>
+    <hr>
+    <p>In July 2014, we finished the new sample and colored the product to make it better-looking. And this sample is what we show as air umbrella-b in out pictures and videos. </p>
+    <hr>
+    <img src="images/finished-product.jpg"></img>
+  </div>
+
+  <!--buy button-->
+  <br>
+  <center>
+  <a class="cta" href="checkout.html"><button>BUY NOW!</button></a>
+  </center>
+  <br>
+  <br>
+
+    <script>
+      window.onscroll = function() {myFunction()};
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } 
+        else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+
+  </body>
+</html>

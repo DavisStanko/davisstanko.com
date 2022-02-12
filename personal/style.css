@@ -1,0 +1,104 @@
+body {
+    background-color: #313131;
+    background-repeat: repeat;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #4894FF;
+    word-wrap: break-word;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Paragraphs */
+p {
+    width: 74%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Lists appearance */
+ul, li {
+    text-align: left;
+    width: 84%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Code appearance */
+code {
+    font-family: monospace;
+    background-color: rgba(50, 50, 50, 0.7);
+    padding: 1px;
+}
+
+/* Quote appearance */
+blockquote {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+hr {
+    width: 95%;
+}
+
+/* Images appearance */
+img {
+    max-width: 74%;
+}
+
+/* Tables appearance */
+table, th, td {
+    text-align: center;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+/* WEBSITE'S CLASSES*/
+
+/* Webring links appearance */
+.webring, .webring-graveyard {
+    text-align: center;
+}
+
+/* Webring graveyard - UNUSED */
+.webring-graveyard a {
+    opacity: 0.5;
+}
+
+.webring-graveyard a:hover {
+    opacity: 1;
+}
+
+/* Aligned text */
+.center {
+    text-align: center;
+}
+
+/* Text background */
+.bg, .menu {
+    border: 1px solid #ffffff;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Menu links */
+.menu a {
+    margin-right: 9px;
+    margin-left: 9px;
+}
