@@ -4,73 +4,43 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<!--This sitemap prioritizes my personal website over the school project in search results.-->
 
 <url>
   <loc>https://davisstanko.com/</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
+  <lastmod>2022-03-16T20:03:08+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://davisstanko.com/personal/home.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://davisstanko.com/html/home.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>https://davisstanko.com/personal/personal-html/contact.html</loc>
-  <lastmod>2022-02-08T01:22:52+00:00</lastmod>
+  <loc>https://davisstanko.com/index.html</loc>
+  <lastmod>2022-03-16T20:03:08+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://davisstanko.com/personal/personal-html/portfolio.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://davisstanko.com/personal/personal-html/resume.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://davisstanko.com/html/product.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>https://davisstanko.com/html/about.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.00</priority>
 </url>
 <url>
   <loc>https://davisstanko.com/html/contact.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.00</priority>
+  <lastmod>2022-03-16T20:32:22+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://davisstanko.com/html/checkout.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.00</priority>
+  <loc>https://davisstanko.com/html/portfolio.html</loc>
+  <lastmod>2022-03-16T20:03:10+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://davisstanko.com/personal/personal-other/sample.pdf</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.00</priority>
+  <loc>https://davisstanko.com/html/resume.html</loc>
+  <lastmod>2022-03-16T20:40:02+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://davisstanko.com/html/final.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.00</priority>
+  <loc>https://davisstanko.com/html/donate.html</loc>
+  <lastmod>2022-03-22T22:45:09+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://davisstanko.com/html/different-billing.html</loc>
-  <lastmod>2022-02-08T01:15:20+00:00</lastmod>
-  <priority>0.00</priority>
+  <loc>https://davisstanko.com/html/other/sample.pdf</loc>
+  <lastmod>2022-02-21T19:42:45+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
