@@ -74,7 +74,7 @@ table, th, td {
 /* Text background */
 .bg, .menu {
     border: 1px solid #ffffff;
-    border-radius: 4px;
+    border-radius: 24px;
     margin-left: 2%;
     margin-right: 2%;
     padding: 10px;
