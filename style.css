@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: white;
 }
 
 /* Paragraphs */
@@ -86,3 +86,20 @@ table, th, td {
     margin-right: 9px;
     margin-left: 9px;
 }
+
+.button {
+    background-color: #313131; /* Green */
+    border: 3px solid #313131;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+  }
+
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0); /* Green */
+  }
