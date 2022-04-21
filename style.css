@@ -119,13 +119,25 @@ td {
 }
 
 .sidebyside {
-    display: table;
+    display: flex;
 }
 
 .left,
 .right {
     width: 50%;
-    float: none;
-    display: table-cell;
-    vertical-align: top;
+    border: 1px solid #ffffff;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.left {
+    float: left;
+    margin-left: 2%;
+    margin-right: 0.5%;
+}
+
+.right {
+    float: right;
+    margin-right: 2%;
+    margin-left: 0.5%;
 }
