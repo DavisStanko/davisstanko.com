@@ -114,6 +114,8 @@ td {
     transition-duration: 0.4s;
     border-radius: 4px;
     width: 15%;
+    margin-bottom: 10px;
+    white-space: nowrap;
 }
 
 /* Hover effect */
