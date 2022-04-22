@@ -67,6 +67,7 @@ hr {
 /* Images appearance */
 img {
     max-width: 74%;
+    object-fit: contain;
 }
 
 /* Tables appearance */
@@ -123,27 +124,19 @@ td {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.sidebyside {
+.container {
     display: flex;
+    /* Margins affected by item */
+    margin-bottom: 20px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
 }
 
-.left,
-.right {
-    width: 50%;
-    min-width: 325px;
+.item {
     border: 1px solid #ffffff;
     border-radius: 24px;
     background: rgba(0, 0, 0, 0.5);
-}
-
-.left {
-    float: left;
-    margin-left: 2%;
+    width: 50%;
     margin-right: 0.5%;
-}
-
-.right {
-    float: right;
-    margin-right: 2%;
     margin-left: 0.5%;
 }
