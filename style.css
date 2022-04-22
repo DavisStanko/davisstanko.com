@@ -27,6 +27,7 @@ a {
     word-wrap: break-word;
 }
 
+/* Links: hover */
 a:hover {
     color: white;
 }
@@ -60,6 +61,7 @@ blockquote {
     margin-left: auto;
 }
 
+/* Line appearance */
 hr {
     width: 95%;
 }
@@ -68,6 +70,13 @@ hr {
 img {
     max-width: 74%;
     object-fit: contain;
+}
+
+/* Photo of me on in welcome section */
+#me {
+    width: 74%;
+    max-width: 256px;
+    max-height: 192px; 
 }
 
 /* Tables appearance */
@@ -128,6 +137,7 @@ td {
     margin-left: 5px;
 }
 
+/* For side by side backgrounds */
 .container {
     display: flex;
     /* Margins affected by item */
@@ -136,6 +146,7 @@ td {
     margin-right: 1.5%;
 }
 
+/* Items in containers */
 .item {
     border: 1px solid #ffffff;
     border-radius: 24px;
