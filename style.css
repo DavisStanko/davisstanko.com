@@ -109,18 +109,23 @@ td {
     color: white;
     padding: 16px 32px;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
     font-size: 16px;
     transition-duration: 0.4s;
     border-radius: 4px;
     width: 15%;
     margin-bottom: 10px;
-    white-space: nowrap;
+    justify-content: center;
 }
 
 /* Hover effect */
 .button:hover {
     background-color: rgba(0, 0, 0, 0);
+}
+
+/* Button logos */
+.button img {
+    margin-left: 5px;
 }
 
 .container {
