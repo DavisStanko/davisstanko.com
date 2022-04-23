@@ -72,13 +72,6 @@ img {
     object-fit: contain;
 }
 
-/* Photo of me on in welcome section */
-#me {
-    width: 74%;
-    max-width: 256px;
-    max-height: 192px; 
-}
-
 /* Tables appearance */
 table,
 th,
