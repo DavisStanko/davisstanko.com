@@ -130,6 +130,14 @@ td {
     margin-left: 5px;
 }
 
+.logo {
+    width: 24px;
+}
+
+button img .logo {
+    width: 16px;
+}
+
 /* For side by side backgrounds */
 .container {
     display: flex;
