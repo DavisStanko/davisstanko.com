@@ -59,7 +59,7 @@ code {
 }
 
 .address {
-    width: 74%;
+    max-width: 74%;
     word-break: break-all;
 }
 
