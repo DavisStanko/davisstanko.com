@@ -50,9 +50,18 @@ li {
 
 /* Code appearance */
 code {
+    display: inline-block;
     font-family: monospace;
     background-color: rgba(50, 50, 50, 0.7);
-    padding: 1px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.address {
+    width: 74%;
+    word-break: break-all;
 }
 
 /* Quote appearance */
