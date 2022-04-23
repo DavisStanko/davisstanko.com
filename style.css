@@ -19,7 +19,6 @@ h4,
 h5,
 h6 {
     text-align: center;
-    white-space: nowrap;
 }
 
 /* Links */
@@ -140,10 +139,11 @@ button img .logo {
 }
 
 .qr {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 26px;
+    margin-right: 26px;
     width: 240px;
     min-width: 240px;
+    border-radius: 4px;
 }
 
 /* For side by side backgrounds */
