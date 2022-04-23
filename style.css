@@ -112,6 +112,15 @@ td {
     margin-left: 9px;
 }
 
+.flexcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 74%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* Buttons */
 .button {
     background-color: #313131;
@@ -119,12 +128,14 @@ td {
     color: white;
     padding: 16px 32px;
     text-decoration: none;
-    display: inline-flex;
     font-size: 16px;
     transition-duration: 0.4s;
     border-radius: 4px;
-    width: 15%;
-    min-width: 135.2px; /*  Max content width is the bitcoin button */
+
+    display: inline-flex;
+    flex: 1 1 0;
+    margin-right: 4px;
+    margin-left: 4px;
     margin-bottom: 10px;
     justify-content: center;
 }
