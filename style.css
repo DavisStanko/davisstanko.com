@@ -176,3 +176,31 @@ button img .logo {
     margin-left: 0.5%;
     margin-bottom: 20px;
 }
+
+.hide {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+@media (hover){
+.hide {
+    display: none;
+}
+}
+
+@media (hover) {
+.displayonhover:hover + .hide {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+}
+
+.textonimage {
+    position: relative;
+}
