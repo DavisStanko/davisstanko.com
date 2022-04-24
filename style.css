@@ -198,7 +198,7 @@ button img .logo {
 }
 
 /* The actual popup (appears on top) */
-.popup .popuptext {
+.popup .popupwindow {
   visibility: hidden;
   position: fixed;
   left: 50%;
