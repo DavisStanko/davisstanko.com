@@ -224,7 +224,7 @@ button img .logo {
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .show {
-  visibility: visible !important;
+  visibility: visible !important; /* I know this is not recommended, sorry! */
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
 }
