@@ -2,7 +2,7 @@
 function moneropopup() {
   var popup = document.getElementById("moneropopup");
   popup.classList.toggle("show");
-  var popup = document.getElementById("moneropopup");
+  var popup = document.getElementById("dimmer");
   popup.classList.toggle("show");
 }
 
