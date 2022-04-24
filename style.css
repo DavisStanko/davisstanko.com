@@ -192,7 +192,6 @@ button img .logo {
  /* Popup container */
 .popup {
   position: relative;
-  cursor: pointer;
   display: inline-flex;
   flex: 1 1 0;
 }
@@ -245,4 +244,5 @@ button img .logo {
     right: 16px;
     top: 16px;
     width: 20px;
+    cursor: pointer;
 }
