@@ -14,7 +14,7 @@ function bitcoinpopup() {
 }
 
   function paypalpopup() {
-    var popup = document.getElementById("dimmer");
+    var popup = document.getElementById("paypalpopup");
     popup.classList.toggle("show");
     var popup = document.getElementById("dimmer");
     popup.classList.toggle("show");
