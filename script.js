@@ -9,12 +9,12 @@ function moneropopup() {
 function bitcoinpopup() {
     var popup = document.getElementById("bitcoinpopup");
     popup.classList.toggle("show");
-    var popup = document.getElementById("bitcoinpopup");
+    var popup = document.getElementById("dimmer");
     popup.classList.toggle("show");
 }
 
   function paypalpopup() {
-    var popup = document.getElementById("paypalpopup");
+    var popup = document.getElementById("dimmer");
     popup.classList.toggle("show");
     var popup = document.getElementById("dimmer");
     popup.classList.toggle("show");
