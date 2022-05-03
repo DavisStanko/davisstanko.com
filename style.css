@@ -244,3 +244,22 @@ button img .logo {
     width: 20px;
     cursor: pointer;
 }
+
+/* Tic Tac Toe Game */
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 10px auto;
+    background-color: #313131;
+    color: #ffffff;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <script type="text/javascript" src="/script.js"></script>
     <title>Davis Stanko</title>
 
     <!-- Favicon -->
@@ -29,6 +28,7 @@
             <a href="#welcome">Welcome</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
+            <a href="#tictactoe">Tic Tac Toe</a>
             <a href="#donate">Donate</a>
         </div>
 
@@ -64,6 +64,24 @@
 
             <h3>System Administration</h3>
             <p>Windows, Command Prompt, Linux, Bash, Git, and Nginx.</p>
+        </div>
+
+        <br id="tictactoe">
+        <div class="bg">
+            <h2>Tic Tac Toe</h2>
+            <div class="game--container">
+                <div data-cell-index="0" class="cell"></div>
+                <div data-cell-index="1" class="cell"></div>
+                <div data-cell-index="2" class="cell"></div>
+                <div data-cell-index="3" class="cell"></div>
+                <div data-cell-index="4" class="cell"></div>
+                <div data-cell-index="5" class="cell"></div>
+                <div data-cell-index="6" class="cell"></div>
+                <div data-cell-index="7" class="cell"></div>
+                <div data-cell-index="8" class="cell"></div>
+            </div>
+            <p class="game--status"></p>
+            <a class="button" onclick="handleRestartGame()">Restart Game</a>
         </div>
 
         <br id="donate">
@@ -115,6 +133,7 @@
         </div>
 
     <h5>Created by Davis Stanko</h5>
+    <script src="/script.js"></script>
 </body>
 
 </html>
