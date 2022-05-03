@@ -130,6 +130,7 @@ td {
     text-decoration: none;
     transition-duration: 0.4s;
     border-radius: 4px;
+    cursor: pointer;
 
     display: inline-flex;
     flex: 1 1 0;
