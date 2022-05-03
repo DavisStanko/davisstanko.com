@@ -250,7 +250,7 @@ button img .logo {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 306px;
-    margin: 10px auto;
+    margin: auto;
     background-color: #313131;
     color: #ffffff;
 }
