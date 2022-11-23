@@ -115,7 +115,6 @@ td {
 .flexcontainer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     width: 74%;
     margin-right: auto;
     margin-left: auto;
