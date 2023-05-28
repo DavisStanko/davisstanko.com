@@ -38,6 +38,12 @@ a:hover {
 p {
     width: 74%;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.long {
+    margin-bottom: 10px;
 }
 
 /* Lists appearance */
@@ -169,7 +175,11 @@ td {
 
 #lichess-username {
     margin-bottom: 10px;
-  }
+}
+
+#ratings-list {
+    margin-bottom: 10px;
+}
   
 
 /* Buttons */
