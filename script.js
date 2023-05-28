@@ -3,7 +3,6 @@ function isTouchDevice() {
   return 'ontouchstart' in window || navigator.maxTouchPoints;
 }
 
-// Disable dropdown href
 var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
 dropdownToggles.forEach(function(toggle) {
@@ -14,7 +13,6 @@ dropdownToggles.forEach(function(toggle) {
   });
 });
 
-
 var dropdownLinks = document.querySelectorAll('.dropdown > a');
 
 dropdownLinks.forEach(function(link) {
@@ -24,6 +22,21 @@ dropdownLinks.forEach(function(link) {
     this.parentElement.classList.toggle('active');
   });
 });
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+  var dropdowns = document.querySelectorAll('.dropdown');
+  var targetElement = event.target;
+
+  dropdowns.forEach(function(dropdown) {
+    if (!dropdown.contains(targetElement)) {
+      var dropdownContent = dropdown.querySelector('.dropdown-content');
+      dropdownContent.style.display = 'none';
+      dropdown.classList.remove('active');
+    }
+  });
+});
+
 
 
 // Slideshow
