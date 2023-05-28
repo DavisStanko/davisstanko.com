@@ -140,14 +140,6 @@ td {
     display: block;
 }
 
-@media (max-width: 767px) {
-
-    /* Mobile-friendly styles */
-    .dropdown.active .dropdown-content {
-        display: block;
-    }
-}
-
 /* Project container */
 .container {
     display: flex;
@@ -181,7 +173,8 @@ td {
 }
 
 .mySlides.fade img {
-    height: 20vh; /* Adjust the height as needed */
+    height: 20vh;
+    /* Adjust the height as needed */
 }
 
 .prev,
@@ -201,7 +194,7 @@ td {
     right: auto;
     border-radius: 3px 0 0 3px;
 }
-  
+
 .next {
     right: 0;
     left: auto;

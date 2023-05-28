@@ -3,6 +3,18 @@ function isTouchDevice() {
   return 'ontouchstart' in window || navigator.maxTouchPoints;
 }
 
+// Disable dropdown href
+var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+dropdownToggles.forEach(function(toggle) {
+  toggle.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default action of the link
+    var dropdownContent = this.nextElementSibling;
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+  });
+});
+
+
 // Mobile Dropdown Toggle
 var dropdowns = document.querySelectorAll('.dropdown');
 
