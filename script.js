@@ -148,3 +148,35 @@ function handleRestartGame() {
 
 
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick)); 
+
+//LiChess API
+fetch('https://lichess.org/api/user/davisstanko')
+  .then(response => response.json())
+  .then(data => {
+
+    // Extract and sort the ratings
+    const ratings = [
+      { name: 'Rapid', rating: data.perfs.rapid.rating },
+      { name: 'Blitz', rating: data.perfs.blitz.rating },
+      { name: 'Bullet', rating: data.perfs.bullet.rating },
+      { name: 'UltraBullet', rating: data.perfs.ultraBullet.rating },
+      { name: 'Correspondence', rating: data.perfs.correspondence.rating },
+      { name: 'Classical', rating: data.perfs.classical.rating },
+      { name: 'Puzzle', rating: data.perfs.puzzle.rating },
+    ];
+    ratings.sort((a, b) => b.rating - a.rating);
+
+    // Update the HTML elements with the sorted ratings
+    const ratingsList = document.getElementById('ratings-list');
+    ratings.forEach(rating => {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${rating.name}: ${rating.rating}`;
+      ratingsList.appendChild(listItem);
+    });
+
+    document.getElementById('lichess-stats').style.display = 'block';
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
