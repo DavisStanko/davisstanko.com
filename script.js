@@ -15,26 +15,16 @@ dropdownToggles.forEach(function(toggle) {
 });
 
 
-// Mobile Dropdown Toggle
-var dropdowns = document.querySelectorAll('.dropdown');
+var dropdownLinks = document.querySelectorAll('.dropdown > a');
 
-dropdowns.forEach(function(dropdown) {
-  dropdown.addEventListener('click', function(event) {
-    var isMobile = isTouchDevice();
-
-    if (isMobile) {
-      var dropdownContent = this.querySelector('.dropdown-content');
-
-      // Check if the target element is not a link
-      if (!event.target.matches('.dropdown-content a')) {
-        event.preventDefault();
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-      }
-    }
-
-    this.classList.toggle('active');
+dropdownLinks.forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    var dropdownContent = this.parentElement.querySelector('.dropdown-content');
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    this.parentElement.classList.toggle('active');
   });
 });
+
 
 // Slideshow
 let slideIndex = 1;
