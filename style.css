@@ -125,6 +125,8 @@ td {
 .dropdown-content {
     display: none;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #181818;
     min-width: 180px;
     z-index: 1;
