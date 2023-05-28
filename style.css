@@ -142,6 +142,30 @@ td {
     display: block;
 }
 
+/* narrow screen */
+@media screen and (max-width: 735px) {
+    /* column menu links */
+    .menu a,
+    .dropdown {
+        display: flex;
+        flex-flow: column;
+        margin-top: 10px;
+    }
+
+    /* remove margin from first children */
+    .menu a:first-child,
+    .dropdown:first-child {
+        margin-top: 0;
+    }
+
+    /* move dropdown content below link */
+    .dropdown-content {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 /* Project container */
 .container {
     display: flex;
