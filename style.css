@@ -155,6 +155,12 @@ td {
     margin: auto;
 }
 
+.project--logo {
+    width: 74vw;
+    max-height: 10vh;
+    margin: auto;
+}
+
 /* Chess container */
 #chess-container {
     margin: auto;
