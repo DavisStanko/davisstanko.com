@@ -115,7 +115,39 @@ td {
     margin-left: 9px;
 }
 
-.flexcontainer {
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #181818;
+    min-width: 180px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 767px) {
+    /* Mobile-friendly styles */
+    .dropdown.active .dropdown-content {
+      display: block;
+    }
+  }
+
+/* Project container */
+.container {
     display: flex;
     flex-flow: row wrap;
     width: 74%;
