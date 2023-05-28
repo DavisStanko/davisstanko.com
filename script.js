@@ -1,3 +1,31 @@
+// Check if the user is on a mobile device
+function isTouchDevice() {
+  return 'ontouchstart' in window || navigator.maxTouchPoints;
+}
+
+// Mobile Dropdown Toggle
+var dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(function(dropdown) {
+  dropdown.addEventListener('click', function(event) {
+    var isMobile = isTouchDevice();
+
+    if (isMobile) {
+      var dropdownContent = this.querySelector('.dropdown-content');
+
+      // Check if the target element is not a link
+      if (!event.target.matches('.dropdown-content a')) {
+        event.preventDefault();
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+      }
+    }
+
+    this.classList.toggle('active');
+  });
+});
+
+
+
 //POPUP CODE
 // When the user clicks on Monero, open the Monero popup
 function moneropopup() {
