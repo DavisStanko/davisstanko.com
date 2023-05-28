@@ -3,6 +3,8 @@ html {
 }
 
 body {
+    overflow-x: hidden;
+    position: relative;
     background-color: #313131;
     font-family: monospace;
     font-size: 16px;
