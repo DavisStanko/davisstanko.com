@@ -181,8 +181,18 @@ td {
 
 .project--logo {
     width: 74vw;
-    max-height: 10vh;
+    max-height: 15vh;
     margin: auto;
+}
+
+#invite {
+    background-color: #7289da;
+    border-color: #7289da;
+}
+
+#invite:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #7289da;
 }
 
 .slideshow-container {
