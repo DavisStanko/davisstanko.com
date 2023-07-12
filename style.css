@@ -167,15 +167,15 @@ hr {
 }
 
 .border__image {
-    width: 74vw;
-    height: 35vh;
+    width: 75vw;
+    height: 50vh;
     object-fit: contain;
     margin-bottom: 20px;
 }
 
 .logo {
-    width: 37vw;
-    height: 17.5vh;
+    width: 37.5vw;
+    height: 25vh;
 }
 
 /* tictactoe */
