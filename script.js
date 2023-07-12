@@ -51,14 +51,10 @@ function plusSlides(n) {
 // current year
 document.getElementById("current__year").innerHTML = new Date().getFullYear();
 
-//POPUP CODE
-// When the user clicks on Monero, open the Monero popup
-function moneropopup() {
-  var popup = document.getElementById("moneropopup");
-  popup.classList.toggle("show");
-  var popup = document.getElementById("dimmer");
-  popup.classList.toggle("show");
-}
+// When the user clicks on a navbar link, execute scrollToSection
+document.querySelectorAll(".scroll").forEach(function(link) {
+    link.addEventListener("click", scrollToSection);
+});
 
 // When the user clicks on Bitcoin, open the Bitcoin popup
 function bitcoinpopup() {
