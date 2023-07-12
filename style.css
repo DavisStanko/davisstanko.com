@@ -4,42 +4,33 @@ html {
 }
 
 body {
-    overflow-x: hidden;
-    position: relative;
-    background-color: #313131;
-    font-family: monospace;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ffffff;
-}
-
-/* Headers */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-color: #181A1B;
+    margin: 0 auto;
     text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-/* Links */
-a {
-    color: #4894FF;
-    white-space: nowrap;
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-/* Links: hover */
-a:hover {
-    color: white;
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    margin: 0 0 18px 0;
+    font-size: 1.5rem;
 }
 
 /* Paragraphs */
 p {
     width: 74%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0 auto;
 }
 
 .long {
@@ -75,7 +66,7 @@ blockquote {
 
 /* Line appearance */
 hr {
-    width: 95%;
+    width: 74%;
 }
 
 /* Images appearance */
