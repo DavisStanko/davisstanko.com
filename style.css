@@ -69,24 +69,25 @@ hr {
     width: 74%;
 }
 
-/* Images appearance */
-img {
-    max-width: 74%;
-    object-fit: contain;
+/* hero */
+#hero {
+    background-image: linear-gradient(#333333, #181A1B);
+    height: 100vh;
+    width: 100%;
 }
 
-/* Tables appearance */
-table,
-th,
-td {
+#hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     text-align: center;
-    border: 1px solid white;
-    border-collapse: collapse;
+    backdrop-filter: blur(10px);
 }
 
-/* Aligned text */
-.center {
-    text-align: center;
+#hero__text {
+    margin-bottom: 10px;
 }
 
 /* Text background */
