@@ -56,29 +56,21 @@ document.querySelectorAll(".scroll").forEach(function(link) {
     link.addEventListener("click", scrollToSection);
 });
 
-// When the user clicks on Bitcoin, open the Bitcoin popup
-function bitcoinpopup() {
-    var popup = document.getElementById("bitcoinpopup");
-    popup.classList.toggle("show");
-    var popup = document.getElementById("dimmer");
-    popup.classList.toggle("show");
-}
+// Smoothly scroll to the target section, adjusting for the navbar height
+function scrollToSection(event) {
+event.preventDefault();
 
-//  When the user clicks on PayPal, open the PayPal popup
-  function paypalpopup() {
-    var popup = document.getElementById("paypalpopup");
-    popup.classList.toggle("show");
-    var popup = document.getElementById("dimmer");
-    popup.classList.toggle("show");
-}
+const navbarHeight = navbar.offsetHeight; // Get the height of the navbar
+const targetId = this.getAttribute("href"); // Get the href value of the clicked link
 
-// Close ALL popups if the user clicks outside of it
-function hideall () {
-  var elems = document.querySelectorAll(".show");
+// Calculate the offset position of the target section, subtracting the navbar height
+const targetOffset = document.querySelector(targetId).offsetTop - (navbarHeight + 50);
 
-  [].forEach.call(elems, function(el) {
-      el.classList.remove("show");
-  });
+// Scroll to the target section with a smooth behavior
+window.scrollTo({
+    top: targetOffset,
+    behavior: "smooth"
+});
 }
 
 //TICTACTOE CODE
