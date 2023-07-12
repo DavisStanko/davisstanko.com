@@ -1,7 +1,32 @@
-// Check if the user is on a mobile device
-function isTouchDevice() {
-  return 'ontouchstart' in window || navigator.maxTouchPoints;
-}
+var text = [
+    "I make websites",
+    "I develop Discord bots",
+    "I build APIs",
+    "I write scripts",
+    "I perform systems administration",
+    "I harden systems",
+    "I know how to exit Vim",
+    "I program",
+    "I turn computers off and on... again",
+    "I use Arch btw",
+    "I like the command line",
+    "I publish FOSS",
+    "I host services",
+    "I manage servers",
+    "I write descriptive commit messages",
+    "I troubleshoot issues",
+    "I automate tasks",
+    "I document my code",
+    "I customize dotfiles",
+    "I implement security measures",
+    "I optimize performance",
+    "I maintain backups",
+    "I do a lot"
+];
+var counter = 0
+var elem = document.getElementById("changeText")
+change()
+var inst = setInterval(change, 2000)
 
 var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
