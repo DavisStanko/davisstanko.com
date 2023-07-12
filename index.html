@@ -81,23 +81,23 @@
         </div>
     </div>
 
-        <br id="tictactoe">
-        <div class="bg">
-            <h2>Tic Tac Toe</h2>
-            <div class="game--container">
-                <div data-cell-index="0" class="cell"></div>
-                <div data-cell-index="1" class="cell"></div>
-                <div data-cell-index="2" class="cell"></div>
-                <div data-cell-index="3" class="cell"></div>
-                <div data-cell-index="4" class="cell"></div>
-                <div data-cell-index="5" class="cell"></div>
-                <div data-cell-index="6" class="cell"></div>
-                <div data-cell-index="7" class="cell"></div>
-                <div data-cell-index="8" class="cell"></div>
-            </div>
-            <p class="game--status"></p>
-            <a class="button" onclick="handleRestartGame()">Restart Game</a>
+    <h2 id="games">Games</h2>
+    <div class="border red">
+        <h3>Tic Tac Toe</h3>
+        <div class="tictactoe">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
         </div>
+        <p class="tictactoe__status"></p>
+        <a class="button red__button" onclick="tictactoeRestartGame()">Restart Game</a>
+    </div>
 
         <br id="donate">
         <div class="bg">
