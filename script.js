@@ -28,36 +28,11 @@ var elem = document.getElementById("changeText")
 change()
 var inst = setInterval(change, 2000)
 
-var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-
-dropdownToggles.forEach(function(toggle) {
-  toggle.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent default action of the link
-    var dropdownContent = this.nextElementSibling;
-    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-  });
-});
-
-var dropdownLinks = document.querySelectorAll('.dropdown > a');
-
-dropdownLinks.forEach(function(link) {
-  link.addEventListener('click', function(event) {
-    var dropdownContent = this.parentElement.querySelector('.dropdown-content');
-    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-    this.parentElement.classList.toggle('active');
-  });
-});
-
-// Close dropdown when clicking outside
-document.addEventListener('click', function(event) {
-  var dropdowns = document.querySelectorAll('.dropdown');
-  var targetElement = event.target;
-
-  dropdowns.forEach(function(dropdown) {
-    if (!dropdown.contains(targetElement)) {
-      var dropdownContent = dropdown.querySelector('.dropdown-content');
-      dropdownContent.style.display = 'none';
-      dropdown.classList.remove('active');
+function change() {
+    elem.innerHTML = text[counter]
+    counter++
+    if (counter >= text.length) {
+        counter = 0
     }
   });
 });
