@@ -148,4 +148,76 @@ function tictactoeRestartGame() {
 }
 
 
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick)); 
+document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
+
+
+// T-Rex
+const player = document.getElementById("t-rex-player");
+const enemy = document.getElementById("t-rex-enemy");
+const gameContainer = document.getElementById("t-rex");
+const scoreDisplay = document.getElementById("t-rex-score");
+
+let jumping = false;
+let score = 0;
+
+gameContainer.addEventListener("click", () => {
+    if (!jumping) {
+        jumping = true;
+        
+        player.style.transition = "transform 0.5s ease-out";
+        player.style.transform = "translateY(-100px)";
+        setTimeout(() => {
+            player.style.transition = "transform 0.5s ease-in";
+            player.style.transform = "translateY(0px)";
+            jumping = false;
+        }, 500);
+    }
+});
+
+function isDead() {
+    const playerRect = player.getBoundingClientRect();
+    const enemyRect = enemy.getBoundingClientRect();
+    return (
+        playerRect.left < enemyRect.right &&
+        playerRect.right > enemyRect.left &&
+        playerRect.top < enemyRect.bottom &&
+        playerRect.bottom > enemyRect.top
+    );
+}
+
+function gameLoop() {
+    const enemyRight = parseInt(getComputedStyle(enemy).right);
+    const containerWidth = gameContainer.offsetWidth;
+
+    if (isDead()) {
+        enemy.style.right = "0px";
+        score = 0;
+        scoreDisplay.innerHTML = "Score: 0";
+    } else if (enemyRight + 50 < containerWidth) {
+        enemy.style.right = (enemyRight + 2) + "px";
+    } else {
+        enemy.style.right = "0px";
+        score++;
+        // fizzbuzz
+        if (score % 3 == 0 && score % 5 == 0) {
+            scoreDisplay.innerHTML = "Score: FizzBuzz";
+        }
+        // fizz
+        else if (score % 3 == 0) {
+            scoreDisplay.innerHTML = "Score: Fizz";
+        }
+        // buzz
+        else if (score % 5 == 0) {
+            scoreDisplay.innerHTML = "Score: Buzz";
+        }
+        // normal
+        else {
+            scoreDisplay.innerHTML = "Score: " + score;
+        }
+    }
+
+    requestAnimationFrame(gameLoop);
+}
+
+
+gameLoop();
