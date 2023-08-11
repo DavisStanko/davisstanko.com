@@ -151,11 +151,11 @@ function tictactoeRestartGame() {
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 
 
-// T-Rex
-const player = document.getElementById("t-rex-player");
-const enemy = document.getElementById("t-rex-enemy");
-const gameContainer = document.getElementById("t-rex");
-const scoreDisplay = document.getElementById("t-rex-score");
+// block-bounce
+const player = document.getElementById("block-bounce-player");
+const enemy = document.getElementById("block-bounce-enemy");
+const gameContainer = document.getElementById("block-bounce");
+const scoreDisplay = document.getElementById("block-bounce-score");
 
 let jumping = false;
 let score = 0;
