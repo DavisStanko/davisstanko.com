@@ -232,6 +232,45 @@ hr {
     right: 0px;
 }
 
+@media screen and (max-width: 615px) {
+
+    #block-bounce-player,
+    #block-bounce-enemy {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #333333;
+  }
+  
+  /* The slider handle */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #3216BB;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #3216BB;
+    cursor: pointer;
+  } 
+
 /* svg */
 .svg__logo {
     width: 48px;
