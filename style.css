@@ -198,6 +198,40 @@ hr {
     font-size: 60px;
 }
 
+/* T-Rex */
+#t-rex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-color: #181A1B;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#t-rex p {
+    position: relative;
+    top: -50px;
+}
+
+#t-rex-player {
+    width: 50px;
+    height: 50px;
+    background-color: #3216BB;
+    position: absolute;
+    bottom: 0px;
+}
+
+#t-rex-enemy {
+    width: 50px;
+    height: 50px;
+    background-color: #ff4f5c;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
 /* svg */
 .svg__logo {
     width: 48px;
