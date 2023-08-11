@@ -156,16 +156,27 @@ const player = document.getElementById("block-bounce-player");
 const enemy = document.getElementById("block-bounce-enemy");
 const gameContainer = document.getElementById("block-bounce");
 const scoreDisplay = document.getElementById("block-bounce-score");
+const slider = document.getElementById("block-bounce-speed");
+
 
 let jumping = false;
+let lastJumpTime = 0;
 let score = 0;
+let enemySpeed = 2;
+
+slider.oninput = function () {
+    enemySpeed = this.value;
+    enemySpeed = Math.round(enemySpeed);
+}
 
 gameContainer.addEventListener("click", () => {
-    if (!jumping) {
+    const currentTime = Date.now();
+    if (!jumping && currentTime - lastJumpTime >= 1000) {
         jumping = true;
-        
+        lastJumpTime = Date.now();
+
         player.style.transition = "transform 0.5s ease-out";
-        player.style.transform = "translateY(-100px)";
+        player.style.transform = "translateY(-" + jumpHeight + "px)";
         setTimeout(() => {
             player.style.transition = "transform 0.5s ease-in";
             player.style.transform = "translateY(0px)";
@@ -189,12 +200,14 @@ function gameLoop() {
     const enemyRight = parseInt(getComputedStyle(enemy).right);
     const containerWidth = gameContainer.offsetWidth;
 
+    jumpHeight = 100;
+
     if (isDead()) {
         enemy.style.right = "0px";
         score = 0;
         scoreDisplay.innerHTML = "Score: 0";
     } else if (enemyRight + 50 < containerWidth) {
-        enemy.style.right = (enemyRight + 2) + "px";
+        enemy.style.right = (enemyRight + enemySpeed) + "px";
     } else {
         enemy.style.right = "0px";
         score++;
@@ -216,6 +229,7 @@ function gameLoop() {
         }
     }
 
+    
     requestAnimationFrame(gameLoop);
 }
 
