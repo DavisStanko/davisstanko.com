@@ -61,6 +61,7 @@ function scrollToSection(event) {
     });
 }
 
+
 //TICTACTOE CODE
 const statusDisplay = document.querySelector('.tictactoe__status');
 
@@ -229,7 +230,7 @@ function gameLoop() {
         }
     }
 
-    
+
     requestAnimationFrame(gameLoop);
 }
 

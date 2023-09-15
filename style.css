@@ -186,6 +186,7 @@ hr {
     background-color: #181A1B;
     color: aliceblue;
     margin-bottom: 10px;
+    z-index: 1;
 }
 
 .cell {
@@ -244,7 +245,7 @@ hr {
 .slidecontainer {
     width: 100%; /* Width of the outside container */
   }
-  
+
   /* The slider itself */
   .slider {
     -webkit-appearance: none;
@@ -253,7 +254,7 @@ hr {
     height: 25px;
     background: #181A1B;
   }
-  
+
   /* The slider handle */
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -263,13 +264,13 @@ hr {
     background: #3216BB;
     cursor: pointer;
   }
-  
+
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     background: #3216BB;
     cursor: pointer;
-  } 
+  }
 
 /* svg */
 .svg__logo {
