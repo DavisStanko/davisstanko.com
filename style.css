@@ -59,6 +59,7 @@ h3 {
 
 p {
   width: 85%;
+  max-width: 800px;
   margin: 0 auto 1.25rem;
   line-height: 1.7;
 }
@@ -104,6 +105,15 @@ p {
   padding: 15px 0;
   box-shadow: var(--shadow);
   z-index: 10;
+}
+
+.botterfly-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between image and stats */
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* optional: so it looks okay on mobile too */
 }
 
 /* Stats bubble */
@@ -253,7 +263,6 @@ p {
   max-width: 800px;
   height: auto;
   object-fit: contain;
-  margin-bottom: 20px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
@@ -268,7 +277,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1.5rem;
 }
 
 /* Technology badge styles */
