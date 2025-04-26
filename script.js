@@ -1,26 +1,41 @@
 var text = [
-  "I make websites",
-  "I develop Discord bots",
+  "I develop websites",
   "I build APIs",
-  "I write scripts",
+  "I create Discord bots",
+  "I automate tasks",
   "I perform systems administration",
-  "I harden systems",
+  "I manage servers",
+  "I optimize performance",
+  "I implement security measures",
+  "I troubleshoot and debug issues",
+  "I maintain regular backups",
+  "I customize and manage dotfiles",
+  "I host and maintain services",
+  "I deploy scalable applications",
+  "I build command-line tools",
+  "I improve system reliability",
+  "I write clear documentation",
+  "I design efficient workflows",
+  "I publish open-source software",
+  "I contribute to FOSS projects",
+  "I streamline development processes",
+  "I write maintainable code",
+  "I maintain CI/CD pipelines",
+  "I monitor system health",
+  "I manage DNS and domains",
+  "I build secure authentication systems",
   "I know how to exit Vim",
-  "I program",
   "I turn computers off and on... again",
   "I use Arch btw",
   "I like the command line",
-  "I publish FOSS",
-  "I host services",
-  "I manage servers",
   "I write descriptive commit messages",
-  "I troubleshoot issues",
-  "I automate tasks",
   "I document my code",
-  "I customize dotfiles",
-  "I implement security measures",
-  "I optimize performance",
-  "I maintain backups",
+  "I harden Linux systems",
+  "I debug complex issues",
+  "I engineer automation solutions",
+  "I architect scalable backends",
+  "I optimize server uptime",
+  "I deploy containerized applications",
   "I do a lot",
 ];
 var counter = 0;
@@ -65,11 +80,18 @@ function scrollToSection(event) {
 // Get botterfly stats
 async function fetchBotterflyStats() {
   try {
-    const res = await fetch("http://davisstanko.com/botstats"); // or your server IP
+    const res = await fetch("http://davisstanko.com/botstats");
     const stats = await res.json();
-    document.getElementById(
-      "botterfly-stats"
-    ).innerText = `Currently in ${stats.guilds} servers with ${stats.users} users!`;
+
+    // Create a more engaging stats display
+    const statsElement = document.getElementById("botterfly-stats");
+    statsElement.innerHTML = `
+        <span>🚀 ${stats.guilds} servers</span> • 
+        <span>👥 ${stats.users} users</span>
+      `;
+
+    // Add a subtle animation
+    statsElement.style.animation = "pulse 2s infinite";
   } catch (err) {
     console.error("Failed to load bot stats:", err);
     document.getElementById("botterfly-stats").innerText =
