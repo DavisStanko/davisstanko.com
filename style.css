@@ -271,6 +271,54 @@ p {
   margin-top: 1.5rem;
 }
 
+/* Technology badge styles */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px auto;
+}
+
+.tech-badge {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+.tech-badge:hover {
+  transform: translateY(-3px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.tech-badge img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .tech-stack {
+    gap: 8px;
+  }
+
+  .tech-badge {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+
+  .tech-badge img {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+  }
+}
+
 /* tictactoe */
 .tictactoe {
   display: grid;
