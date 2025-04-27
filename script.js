@@ -80,7 +80,7 @@ function scrollToSection(event) {
 // Get botterfly stats
 async function fetchBotterflyStats() {
   try {
-    const res = await fetch("http://davisstanko.com/botstats");
+    const res = await fetch("https://davisstanko.com/botstats");
     const stats = await res.json();
 
     // Create a more engaging stats display
